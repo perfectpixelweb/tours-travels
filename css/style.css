@@ -1,0 +1,648 @@
+/*======= Google Fonts Poppins =========== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&family=Teko:wght@300;400;600;700&display=swap');
+
+/*=============== Basic CSS ===================*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+span {
+    color: dodgerblue;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 10px 15px;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.tour__section, .discount, .trip__section,.news-events, .luxury__travels, .contact-section {
+    padding: 60px 0;
+}
+
+/*=============== Header Section ===================*/
+.header__section {
+    background: url(../img/Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+}
+
+.header__area {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.header__area .top__header {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    gap: 30px;
+}
+
+.contact i {
+    color: #fff;
+}
+
+.social i {
+    color: #fff;
+    margin-left: 30px;
+}
+
+/* ============Navbar Section============= */
+.navbar__area {
+    background: rgba(0, 0, 0, .7);
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.nav-branding {
+    width: 120px;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: #fff;
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: dodgerblue;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+}
+
+/* ================
+Hero Section
+ ==================== */
+
+.hero__area .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 550px;
+    align-items: center;
+}
+
+.hero__heading {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+}
+
+.hero__para {
+    font-size: 18px;
+}
+
+.hero__text, .hero__para {
+    color: #fff;
+    text-align: center;
+}
+
+.hero__text {
+    width: 60%;
+}
+
+.hero__search {
+    background: #fff;
+    padding: 15px;
+    width: 40%;
+    text-align: center;
+}
+
+.search__heading {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(150, 150, 150);
+}
+
+.search__title {
+    font-size: 16px;
+    color: rgb(150, 150, 150);
+    margin-bottom: 15px;
+}
+
+.hero__search input {
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    background: rgb(239, 237, 237);
+    outline: none;
+    border: none;
+}
+
+span {
+    position: relative;
+}
+
+.hero__search i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    font-size: 18px;
+    line-height: 0px;
+    cursor: pointer;
+    color: rgb(150, 150, 150)
+}
+
+.hero__search a {
+    background: dodgerblue;
+    width: 100%;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hero__bottom {
+    background: rgba(30, 144, 225, 0.8);
+}
+
+.bottom__text {
+    width: 50%;
+    padding: 30px 0;
+    color: #fff;
+}
+
+/*============================
+ Tour Type
+ ============================ */
+.tour__section {
+    background: linear-gradient(rgba(217, 216, 218, 0.7), rgba(217, 213, 218, 0.7)), url(../img/hill.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tour__section .title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-heading {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tour__type {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.tour__type .item {
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+
+.tour__type .item img {
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 10px; 
+    transition: all 0.3s ease-in-out; 
+}
+
+.tour__type .item p {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #fff;
+}
+
+.tour__type .item:hover img{
+    transform: scale(1.2);
+}
+
+/* ===================================
+Discount Section
+====================================== */
+.discount {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/deals.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.discount__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card__item {
+    background: #fff;
+}
+
+.card__item img {
+    width: 100%;
+    height: 250px;
+
+}
+
+.card__text {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.card__text .deals {
+    background: dodgerblue;
+    padding: 0 30px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+}
+
+.discount .section-heading {
+    color: #fff;
+}
+
+.card__title {
+    font-size: 40px;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    color: #888;
+}
+
+.card__text del {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.btn-card {
+    background: dodgerblue;
+    display: inline-block;
+    padding: 10px 40px;
+    color: #fff;
+    margin: 15px 0;
+    border: 1px solid rgb(26, 140, 254);
+    transition: 0.3s ease-in-out;
+}
+
+.btn-card:hover {
+    background: transparent;
+    color: dodgerblue;
+}
+
+.card__item:hover {
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+/*==========================================
+ Trip Section
+ ============================================ */
+.trip__section {
+    background: linear-gradient(rgba(250, 250, 250, 0.7), rgba(0, 0, 0, 0.7)), url(../img/map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.trip__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.trip__wrapper .item {
+    position: relative;
+}
+.trip_img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.trip_img img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.trip__wrapper .item::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    background: rgba(0, 0, 0, .5);
+    transition: all 0.3s ease-in-out;
+}
+
+.trip__text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+}
+
+.trip__text h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.trip__text p {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.trip__text a {
+    display: none;
+    padding: 5px 30px;
+    background: dodgerblue;
+    margin-top: 15px;
+    color: #fff;
+    border: 1px solid rgb(25, 139, 253);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.trip__text a:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.trip__wrapper .item:hover .trip__text a {
+    display: inline-block;
+}
+
+.trip__wrapper .item:hover::after {
+    height: 100%;
+}
+
+.trip__wrapper .item:hover .trip__text {
+    top: 50%;
+}
+
+/* ===================================
+News and events Section
+====================================== */
+.news-events {
+    background: #ddd;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.news-events .title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.news__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.news__item {
+    background: #fff;
+}
+
+.news__item img {
+    width: 100%;
+    border: 8px solid #fff;
+}
+
+.news__card__text {
+    padding: 30px;
+}
+
+.news__cards .d-flex {
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.news__cards i {
+    margin-right: 5px;
+    font-size: 16px;
+    color: #777;
+}
+
+.news__cards p {
+    color: #777;
+}
+
+.news__item h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: dodgerblue;
+}
+
+/* ===================================
+luxury__travels Section
+====================================== */
+.luxury__travels {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/luxury.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.luxury__travels .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.luxury__heading {
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    line-height: 70px;
+    color: #fff;
+}
+
+.luxury__title {
+    font-size: 50px;
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+}
+
+.luxury__text {
+    width: 150px;
+    height: 150px;
+    background: dodgerblue;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 150px;
+    border-radius: 50%;
+    display: block;
+}
+
+/* ===============================
+contact section
+================================= */
+.contact-section {
+    background: #fff;
+}
+
+.contact-section p, a {
+    color: #333;
+}
+
+.contact__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 2fr;
+    gap: 30px;
+}
+
+.contact__heading {
+    font-size: 36px;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.follow__us i {
+    font-size: 16px;
+    color: #fff;
+    background: dodgerblue;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all .6s ease-in-out;
+}
+
+.follow__us i:hover {
+    transform: rotate(360deg);
+}
+
+.search-input {
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+.newslatter input {
+    outline: none;
+    border: none;
+    background: #ddd;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.newslatter a {
+    background: dodgerblue;
+    padding: 12px 20px;
+    color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*=================================
+ footer Section
+ =============================== */
+.footer {
+    background: #fff;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
