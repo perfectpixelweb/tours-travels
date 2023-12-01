@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="desscription" content="This is Tour and Travels website.">
+    <!-- IE browser and Edge support -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Favicon link -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <title>Tour & Travels | Comfort Tour Guide</title>
+    <link rel="stylesheet" href="vendors/css/normalize.css">
     <!-- FontAwesome 6.4.2 -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
@@ -43,13 +49,11 @@
             </div>
           </div>
         </div>
-        <!--container-->
         <hr />
-      </div>
-
-      <div class="navbar__area">
+      </div> 
+       <!--=============== Menu section ============= -->
+      <div class="navbar__area"  id="navbar">
         <div class="container">
-          <!--=============== Menu section ============= -->
           <nav class="navbar">
             <a href="#" class="nav-branding"
               ><img src="img/LOGO.png" alt=""
@@ -70,10 +74,12 @@
           </nav>
         </div>
       </div>
-      <!--navbar-area-->
+    <!-- ==============================
+      Hero area
+    ==================================== -->
       <div class="hero__area">
-        <div class="container">
-          <div class="hero__text">
+        <div class="container"  id="hero">
+          <div class="hero__text" >
             <h1 class="hero__heading">where your journey begins.</h1>
             <p class="hero__para">
               Discover your next great adventure,<br />
@@ -83,22 +89,22 @@
           <div class="hero__search">
             <h2 class="search__heading">Search Tours</h2>
             <p class="search__title">Find your dream tour today</p>
-            <span class="input__field">
+            <div class="input__field">
               <input type="text" placeholder="Search Tour" />
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
-            <span>
+              <i class="icons fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="input__field">
               <input type="text" placeholder="Destination" />
-              <i class="fa-solid fa-plane"></i>
-            </span>
-            <span>
+              <i class="icons fa-solid fa-plane"></i>
+            </div>
+            <div class="input__field">
               <input type="text" placeholder="Tour Type" />
-              <i class="fa-solid fa-bed"></i>
-          </span>
-            <span>
+              <i class="icons fa-solid fa-bed"></i>
+           </div>
+            <div class="input__field">
               <input type="text" placeholder="Month" />
-              <i class="fa-regular fa-calendar-days"></i>
-            </span>
+              <i class="icons fa-regular fa-calendar-days"></i>
+            </div>
             <a href="#" class="btn btn-find">Find Tours</a>
           </div>
         </div>
@@ -116,6 +122,7 @@
         </div>
       </div>
     </header>
+   
     <!--====================== Tour section ================= -->
     <section class="tour__section">
       <div class="container">
@@ -418,6 +425,8 @@
         </div>
       </div>
     </div>
+    <script src="vendors/js/selectivizr.min.js"></script>
+    <script src="vendors/js/html5shiv.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -91,7 +91,7 @@ a {
 
 /* ============Navbar Section============= */
 .navbar__area {
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .5);
 }
 
 .navbar {
@@ -136,6 +136,19 @@ a {
     transition: all 0.3s ease-in-out;
     background: #fff;
 }
+/* ==================
+Sticky Section
+ ==================== */
+ .sticky{
+    position: fixed;
+    top:0;
+    left: 0;
+    width:100%;
+    background: rgba(0, 0, 0, .9);
+    box-shadow:.2rem .5rem 0 rgba(255, 255, 255, 0.3);
+    z-index:9999;
+}
+
 
 /* ================
 Hero Section
@@ -192,25 +205,26 @@ Hero Section
 .hero__search input {
     width: 100%;
     height: 40px;
-    padding: 5px 10px;
     margin-bottom: 15px;
+    padding: 5px 10px;
     background: rgb(239, 237, 237);
     outline: none;
     border: none;
+    
 }
 
-span {
+.input__field {
     position: relative;
+    color:rgb(150, 150, 150);
+    
 }
 
 .hero__search i {
     position: absolute;
-    top: 50%;
+    top:50%;
     right: 10px;
-    font-size: 18px;
-    line-height: 0px;
     cursor: pointer;
-    color: rgb(150, 150, 150)
+    transform: translateY(-50%);
 }
 
 .hero__search a {
@@ -610,7 +624,6 @@ contact section
 
 .search-input {
     width: 100%;
-    height: 40px;
     position: relative;
 }
 
@@ -621,6 +634,7 @@ contact section
     padding: 15px;
     width: 100%;
     border-radius: 5px;
+    position: relative;
 }
 
 .newslatter a {
@@ -630,7 +644,8 @@ contact section
     border-radius: 5px;
     position: absolute;
     right: 0;
-    top: 0;
+    top:50%;
+    transform: translateY(-50%);
 }
 
 /*=================================

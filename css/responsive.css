@@ -1,33 +1,37 @@
-
- /*=========================
+/*=========================
   For max-width 768px
   ==========================*/
-@media (max-width:768px){
+  @media (max-width:768px) {
     .hamburger {
         display: block;
     }
 
-    .hamburger.active .bar:nth-child(2){
+    .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
 
-    .hamburger.active .bar:nth-child(1){
+    .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    .hamburger.active .bar:nth-child(3){
+
+    .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
     .nav-menu {
         position: fixed;
+        top: 0;
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color:rgba(0, 0, 0, .9);
+        justify-content:start;
+        background-color: rgba(0, 0, 0, .9);
         width: 100%;
-        height:calc(100vh - 100px);
+        height: 100vh;
         transition: 0.3s ease-in-out;
         z-index: 2;
+        gap: 10px;
+
     }
 
     .nav-item {
@@ -37,6 +41,7 @@
     .nav-menu.active {
         left: 0;
     }
+
     /* Top-header */
     .header__area {
         display: none;
@@ -51,89 +56,111 @@
     .tour__type {
         grid-template-columns: repeat(2, 1fr)
     }
+
     /* discount and deals */
     .discount__cards {
-        grid-template-columns:repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
+
     /* Trip section */
     .trip__wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .news__cards {
         grid-template-columns: repeat(2, 1fr);
     }
+
     /* luxury__travels Section */
     .luxury__heading {
         font-size: 60px;
 
     }
-    
+
     .luxury__title {
         font-size: 36px;
     }
+
     /* contact- section */
     .contact__wrapper {
-        grid-template-columns:repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
-  /*=========================
+
+/*=========================
   For max-width 576px
   ==========================*/
- @media (max-width:576px){
-    .nav-branding{
+@media (max-width:576px) {
+    .nav-branding {
         width: 100px;
     }
-    .section-heading{
+
+    .section-heading {
         font-size: 24px;
     }
+
     .hero__text {
         display: none;
     }
-    .hero__search{
+
+    .hero__search {
         width: 100%;
     }
-    .tour__section{
+
+    .tour__section {
         padding: 50px 0;
     }
+
     .tour__type {
-      grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-    .discount{
+
+    .discount {
         padding: 50px 0;
     }
+
     .discount__cards {
-        grid-template-columns:repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-    .trip__section{
+
+    .trip__section {
         padding: 50px 0;
     }
+
     .trip__wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
-    .news-events{
+
+    .news-events {
         padding: 50px 0;
     }
+
     .news__cards {
         grid-template-columns: repeat(1, 1fr);
     }
-    .luxury__travels{
+
+    .luxury__travels {
         padding: 50px 0;
     }
+
     .luxury__heading {
         font-size: 40px;
     }
-    
+
     .luxury__title {
         font-size: 30px;
     }
+
     .contact-section {
         padding: 50px 0;
     }
+
     .contact__wrapper {
-        grid-template-columns:repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         text-align: center;
     }
+
     .footer__left {
         display: none;
     }
- }
+}
